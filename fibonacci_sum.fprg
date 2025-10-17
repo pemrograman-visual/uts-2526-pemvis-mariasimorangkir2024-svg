@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci_sum"/>
+        <attribute name="authors" value="MUG1II"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04:42:11 PM"/>
+        <attribute name="created" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAyOjQ0OjQwIFBNOzI3NzI="/>
+        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAzOjM0OjEzIFBNOzM7Mjg4Mg=="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTczU0U3NDg7MjAyNS0xMC0xNzswNDo0MjoxMSBQTTsxOzI2OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, a, b, jumlah, berikut" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="jumlah" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="jumlah" expression="jumlah+b"/>
+                <assign variable="berikut" expression="a+b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="berikut"/>
+            </for>
+            <output expression="jumlah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
