@@ -4,10 +4,10 @@
         <attribute name="name" value="faktorial"/>
         <attribute name="authors" value="MUG1II"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-17 04:39:09 PM"/>
+        <attribute name="saved" value="2025-10-17 04:48:32 PM"/>
         <attribute name="created" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAzOjA4OjA5IFBNOzI3Nzg="/>
         <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAzOjU1OjMyIFBNOzI7Mjg4NQ=="/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtRTczU0U3NDg7MjAyNS0xMC0xNzswNDozOTowOSBQTTsxOzI3MTA="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTczU0U3NDg7MjAyNS0xMC0xNzswNDo0ODozMiBQTTsxOzI3MDY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
