@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="analisis data mahasiswa"/>
+        <attribute name="authors" value="MUG1II"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04:44:55 PM"/>
+        <attribute name="created" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAyOjA1OjU1IFBNOzI3NzU="/>
+        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAzOjMzOjI0IFBNOzM7Mjg4Mw=="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTczU0U3NDg7MjAyNS0xMC0xNzswNDo0NDo1NSBQTTsxOzI3MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, besar, rendah, n, total" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="Nilai" type="Integer" array="True" size="n"/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="Nilai[i]"/>
+                <assign variable="total" expression="Nilai[i]+total"/>
+            </for>
+            <assign variable="besar" expression="Nilai[0]"/>
+            <assign variable="rendah" expression="Nilai[0]"/>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <if expression="Nilai[i]&gt;besar">
+                    <then>
+                        <assign variable="besar" expression="Nilai[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="Nilai[i]&lt;rendah">
+                    <then>
+                        <assign variable="rendah" expression="Nilai[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="total" expression="total/n"/>
+            <output expression="&quot;Rata-rata= &quot;&amp; total" newline="True"/>
+            <output expression="&quot;Tertinggi = &quot; &amp; besar" newline="True"/>
+            <output expression="&quot;Terendah= &quot;&amp; rendah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
