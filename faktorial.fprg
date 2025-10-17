@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="faktorial"/>
+        <attribute name="authors" value="MUG1II"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04:39:09 PM"/>
+        <attribute name="created" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAzOjA4OjA5IFBNOzI3Nzg="/>
+        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAzOjU1OjMyIFBNOzI7Mjg4NQ=="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTczU0U3NDg7MjAyNS0xMC0xNzswNDozOTowOSBQTTsxOzI3MTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, result" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="result" expression="factorial(n)"/>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+    <function name="factorial" type="Integer" variable="result">
+        <parameters>
+            <parameter name="inX" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <if expression="inX==0">
+                <then>
+                    <assign variable="result" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="result" expression="inX*factorial(inX-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
