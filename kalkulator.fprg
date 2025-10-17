@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kalkulator"/>
+        <attribute name="authors" value="MUG1II"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04:50:19 PM"/>
+        <attribute name="created" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAxOjQzOjI1IFBNOzI3NzM="/>
+        <attribute name="edited" value="TVVHMUlJO0xBUFRPUC1CQ00wRUxJUzsyMDI1LTEwLTE3OzAyOjA1OjQ1IFBNOzE7Mjg4Mg=="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRTczU0U3NDg7MjAyNS0xMC0xNzswNDo1MDoxOSBQTTsxOzI3MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angka1, angka2, jumlah, kali, bagi, kurang" type="Integer" array="False" size=""/>
+            <declare name="pilihan" type="String" array="False" size=""/>
+            <input variable="pilihan"/>
+            <if expression="pilihan=&quot;1&quot;">
+                <then>
+                    <input variable="angka1"/>
+                    <input variable="angka2"/>
+                    <assign variable="jumlah" expression="angka1+angka2"/>
+                    <output expression="jumlah" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pilihan=&quot;2&quot;">
+                        <then>
+                            <input variable="angka1"/>
+                            <input variable="angka2"/>
+                            <assign variable="kurang" expression="angka1-angka2"/>
+                            <output expression="kurang" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pilihan=&quot;3&quot;">
+                                <then>
+                                    <input variable="angka1"/>
+                                    <input variable="angka2"/>
+                                    <assign variable="kali" expression="angka1*angka2"/>
+                                    <output expression="kali" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pilihan=&quot;4&quot;">
+                                        <then>
+                                            <input variable="angka1"/>
+                                            <input variable="angka2"/>
+                                            <assign variable="bagi" expression="angka1/angka2"/>
+                                            <output expression="bagi" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="yyaa" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+</flowgorithm>
